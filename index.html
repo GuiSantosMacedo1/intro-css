@@ -1,21 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="HTML falando sobre CSS">
   <meta name="author" content="Guilherme">
-  <title>Intro Css</title>
+  <!-- rel - relationship. qual será o tipo de relação entre o documento e o arquivo href - hyperlink reference. qual será o caminho do arquivo que será importado
+  -->
+  <link rel="stylesheet" href="style.css">
+  link
+  <title>Intro CSS</title>
+
+  <!-- <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #1c1c1c;
+      color: #f0f0f0;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+    section {
+      padding: 20px;
+      background-color: slategray;
+      border-radius: 10px;
+      border-color: blue;
+      border-width: 2px;
+      border-style: solid;
+    }
+  </style> -->
 </head>
+
 <body>
   <header>
     <h1>Bem-vindo ao CSS</h1>
-    <p>O <strong>CSS</strong> (Cascading Style Sheets) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML.</p>
+    <p>O <strong>CSS</strong> (Cascading Style Sheets) é uma linguagem de estilo usada para descrever a apresentação de
+      um documento escrito em HTML.</p>
   </header>
+  <main>
+    <section>
+      <h2>Sobre o CSS</h2>
+      <p>Linguagem responsável por definir a aparência visual e organização dos elementos na tela.</p>
+    </section>
 
-  <section>
+    <section>
+      <h2>Como aplicar o CSS?</h2>
+      <p>Para o CSS, temos três abordagens: </p>
+      <ul>
+        <li><strong>Inline:</strong></li>
+        <li><strong>Internal:</strong></li>
+        <li><strong>External:</strong></li>
+      </ul>
+    </section>
 
-  </section>
+    <section>
+      <h2>O que da pra fazer com CSS</h2>
+      <p>O CSS não serve para apenas colocar cor na página. Ele controla: </p>
+      <ul>
+        <li> cores </li>
+        <li> fontes </li>
+        <li> tamanhos </li>
+        <li> sombra </li>
+        <li> bordas </li>
+        <li> posicionamento </li>
+        <li> responsividade </li>
+        <li> animações </li>
+        <li> transições </li>
+      </ul>
+    </section>
 
+    <section>
+      <h2>Aplicando CSS Inline</h2>
+      <p> Nessa abordagem, o CSS é colocado diretamente nos elementos <strong>HTML</strong> através do atribuito
+        <code>style</code>.</p>
+      <p>Exemplo:</p>
+      <code>&lt;p style="color: blue; font-size: 16px;"&gt;Este parágrafo tem cor azul e fonte de 16px.&lt;/p&gt;</code>
+      <p style="color: blue; font-size: 16px;">Este parágrafo tem cor <strong
+          style="background-color: black; color: white;">azul</strong> e fonte de 16px.</p>
+    </section>
+
+    <section>
+      <h2>Aplicando CSS Internal</h2>
+      <p> Nessa abordagem, o CSS é colocado dentro da tag <code>&lt;style&gt;</code> no <strong>head</strong> do
+        documento HTML.</p>
+    </section>
+
+    <section>
+      <h2>Aplicando CSS External</h2>
+      <p> Nessa abordagem, o CSS é colocado em um arquivo separado com a extensão .css e importado para o documento HTML
+        através da tag <code>&lt;link&gt;</code>.</p>
+        <p>Para conectar o arquivo CSS ao documento HTML, basta usar a tag <code>&lt;link&gt;</code>.</p>
+    </section>
+  </main>
 </body>
+
 </html>
